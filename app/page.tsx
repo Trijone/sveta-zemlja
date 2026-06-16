@@ -4,17 +4,17 @@ const holyPlaces = [
   {
     title: "Храм Гроба Господњег",
     text: "Овде човек утиша корак и срце. Овде се поклања Живоносном Гробу, из кога је Господ васкрсао и смрћу смрт победио.",
-    image: "/images/holy-sepulchre-entrance.jpg",
+    image: "/images/holy-sepulchre-entrance.JPG",
   },
   {
     title: "Голгота",
     text: "На Голготи се не говори много. Ту се стоји пред Крстом, пред љубављу Божјом која се распела за живот света.",
-    image: "/images/holy-sepulchre-interior.jpg",
+    image: "/images/holy-sepulchre-interior.JPG",
   },
   {
     title: "Плоча миропомазања",
     text: "Свето место суза, тишине и благодарности, где се поклоник сећа погребења Христовог и тајне Велике суботе.",
-    image: "/images/golgotha-altar.jpg",
+    image: "/images/golgotha-altar.JPG",
   },
   {
     title: "Поклоници у Светој Земљи",
@@ -29,7 +29,7 @@ const holyPlaces = [
   {
     title: "Васкрс у Светој Земљи",
     text: "У Јерусалиму, у дане Страдања и Васкрсења, срце јасније разуме речи: Христос воскресе из мртвих.",
-    image: "/images/holy-fire-jerusalem.jpg",
+    image: "/images/holy-fire-jerusalem.JPG",
   },
 ];
 
@@ -81,6 +81,7 @@ export default function Home() {
           alt="Панорама Свете Земље"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-950/60 to-stone-950/25" />
@@ -142,9 +143,10 @@ export default function Home() {
 
           <div className="relative h-[460px] overflow-hidden rounded-3xl shadow-2xl">
             <Image
-              src="/images/vhod.jpg"
+              src="/images/257.JPG"
               alt="Поклоници у Светој Земљи"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -177,6 +179,7 @@ export default function Home() {
                     src={place.image}
                     alt={place.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
                   />
                 </div>
@@ -226,9 +229,10 @@ export default function Home() {
 
       <section className="relative overflow-hidden py-28">
         <Image
-          src="/images/orthodox-service-holy-land.jpg"
+          src="/images/orthodox-service-holy-land.JPG"
           alt="Богослужење у Светој Земљи"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-stone-950/75" />
