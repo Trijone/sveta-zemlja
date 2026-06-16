@@ -143,7 +143,7 @@ export default function Home() {
 
           <div className="relative h-[460px] overflow-hidden rounded-3xl shadow-2xl">
             <Image
-              src="/images/vhod.JPG"
+              src="/images/vhod.jpg"
               alt="Поклоници у Светој Земљи"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
